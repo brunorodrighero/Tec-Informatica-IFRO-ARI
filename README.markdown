@@ -54,7 +54,7 @@ ifro-ariquemes-informatica/
    - Certifique-se de que `assets/Logo IFRO Ariquemes-(branca)-horizontal 2.png` e `assets/ifro-ico.png` está na pasta correta.
 
 3. **Atualize o Formulário de Contato**:
-   - O formulário usa o Formspree. O ID atual é `movdjroa`. Se precisar de um novo ID:
+   - O formulário usa o Formspree. Se precisar de um ID:
      - Crie uma conta no [Formspree](https://formspree.io).
      - Crie um novo formulário e obtenha o ID.
      - Atualize o `fetch` em `scripts.js` com o novo ID:
