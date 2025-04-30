@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página da Turma 1A - Curso Técnico em Informática - IFRO Ariquemes">
+  <title>Turma 1A - IFRO Ariquemes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-green-600 text-white p-4 sticky-nav" role="navigation" aria-label="Menu principal">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="../assets/Logo IFRO Ariquemes-(branca)-horizontal 2.png" alt="IFRO Campus Ariquemes Logo" class="h-10 mr-2">
+        <span class="text-lg font-semibold">Turma 1A</span>
+      </div>
+      <button id="nav-toggle" class="md:hidden focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul id="nav-menu" class="hidden md:flex md:space-x-4 md:items-center flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-green-600 md:bg-transparent p-4 md:p-0">
+        <li><a href="../index.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Página Principal</a></li>
+        <li><a href="1a.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Turma 1A</a></li>
+        <li><a href="1b.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Turma 1B</a></li>
+        <li><a href="2a.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Turma 2A</a></li>
+        <li><a href="2b.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Turma 2B</a></li>
+        <li><a href="3a.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Turma 3A</a></li>
+        <li><a href="3b.html" class="hover:underline block py-2 md:py-0" target="_blank" rel="noopener noreferrer">Turma 3B</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-green-700 text-white py-12 md:py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-4xl font-bold mb-4">Bem-vindo à Turma 1A</h2>
+      <p class="text-base md:text-lg mb-6">Espaço dedicado aos alunos da Turma 1A para compartilhar projetos, anúncios e conquistas!</p>
+    </div>
+  </section>
+
+  <!-- About the Class -->
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Sobre a Turma</h2>
+      <p class="text-base md:text-lg mb-4">Esta é a página da Turma 1A do Curso Técnico em Informática. Aqui, compartilhamos nossas atividades, aprendizados e projetos desenvolvidos ao longo do ano. [Adicione uma descrição específica da turma, como objetivos, número de alunos, ou características únicas.]</p>
+    </div>
+  </section>
+
+  <!-- Announcements -->
+  <section class="bg-gray-200 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Anúncios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Próxima Reunião</h3>
+          <p class="text-sm md:text-base">[Adicione detalhes, como data e local da próxima reunião da turma.]</p>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Entrega de Projeto</h3>
+          <p class="text-sm md:text-base">[Adicione informações sobre prazos ou instruções para entrega de projetos.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Class Projects -->
+  <section class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Projetos da Turma</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Projeto 1</h3>
+          <p class="text-sm md:text-base">[Descreva o projeto, como um aplicativo ou site desenvolvido pela turma.]</p>
+          <a href="#" class="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">[Link para o projeto]</a>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Projeto 2</h3>
+          <p class="text-sm md:text-base">[Descreva outro projeto, como uma solução de rede ou banco de dados.]</p>
+          <a href="#" class="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">[Link para o projeto]</a>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Projeto 3</h3>
+          <p class="text-sm md:text-base">[Descreva um terceiro projeto ou atividade.]</p>
+          <a href="#" class="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">[Link para o projeto]</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm md:text-base">© 2025 IFRO Campus Ariquemes. Todos os direitos reservados.</p>
+      <p class="text-sm md:text-base">
+        <a href="https://portal.ifro.edu.br" class="hover:underline" aria-label="Portal oficial do IFRO" target="_blank" rel="noopener noreferrer">Portal IFRO</a> | 
+        <a href="https://github.com/IFRO-Ariquemes" class="hover:underline" aria-label="GitHub do IFRO Ariquemes" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle hamburger menu on mobile
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

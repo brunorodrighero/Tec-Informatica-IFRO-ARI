@@ -1,0 +1,72 @@
+{
+	"disciplines": [
+	  {
+		"name": "Programação Web",
+		"description": "Crie sites dinâmicos com HTML, CSS, JavaScript e bancos de dados.",
+		"hours": 160
+	  },
+	  {
+		"name": "Redes de Computadores",
+		"description": "Configure redes TCP/IP, DNS e gerencie segurança.",
+		"hours": 120
+	  },
+	  {
+		"name": "Banco de Dados",
+		"description": "Domine SQL e modelagem para sistemas eficientes.",
+		"hours": 80
+	  },
+	  {
+		"name": "Segurança da Informação",
+		"description": "Aprenda criptografia e proteção de dados com a LGPD.",
+		"hours": 80
+	  }
+	],
+	"projects": [
+	  {
+		"name": "Hotsite Calculadora de Notas",
+		"description": "Site para calcular notas necessárias para aprovação.",
+		"github": "https://github.com/IFRO-Ariquemes"
+	  },
+	  {
+		"name": "MyCookie Framework",
+		"description": "Framework PHP para estruturas modulares.",
+		"github": "https://github.com/IFRO-Ariquemes"
+	  },
+	  {
+		"name": "Relatório SIGA-EDU",
+		"description": "Sistema para relatórios administrativos.",
+		"github": "https://github.com/IFRO-Ariquemes"
+	  }
+	],
+	"testimonials": [
+	  {
+		"quote": "O curso me deu as ferramentas para criar meu primeiro aplicativo. Agora, sonho em abrir minha startup!",
+		"author": "João Silva, Egresso"
+	  },
+	  {
+		"quote": "As aulas de redes me prepararam para configurar servidores com segurança e confiança.",
+		"author": "Maria Oliveira, Aluna"
+	  },
+	  {
+		"quote": "Participar da OBI foi incrível! O curso me ajudou a enfrentar desafios reais de programação.",
+		"author": "Lucas Santos, Aluno"
+	  }
+	],
+	"events": [
+	  {
+		"name": "Processo Seletivo 2026/1",
+		"date": "Nov/2025",
+		"description": "Inscrições para o curso Técnico em Informática."
+	  },
+	  {
+		"name": "Olimpíada Brasileira de Informática",
+		"date": "Mai/2026",
+		"description": "Competição nacional de programação."
+	  },
+	  {
+		"name": "Workshop de Robótica",
+		"date": "Ago/2026",
+		"description": "Atividade prática com Lego Robotics."
+	  }
+	]
+  }

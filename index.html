@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curso Técnico em Informática Integrado ao Ensino Médio - IFRO Campus Ariquemes">
+  <title>Curso Técnico em Informática - IFRO Ariquemes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-green-600 text-white p-4 sticky-nav" role="navigation" aria-label="Menu principal">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/Logo IFRO Ariquemes-(branca)-horizontal 2.png" alt="IFRO Campus Ariquemes Logo" class="h-10 mr-2">
+      </div>
+      <button id="nav-toggle" class="md:hidden focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul id="nav-menu" class="hidden md:flex md:space-x-4 md:items-center flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-green-600 md:bg-transparent p-4 md:p-0">
+        <li><a href="#home" class="hover:underline block py-2 md:py-0">Início</a></li>
+        <li><a href="#about" class="hover:underline block py-2 md:py-0">Sobre</a></li>
+        <li><a href="#disciplines" class="hover:underline block py-2 md:py-0">Disciplinas</a></li>
+        <li><a href="#curriculum" class="hover:underline block py-2 md:py-0">Currículo</a></li>
+        <li><a href="#turmas" class="hover:underline block py-2 md:py-0">Turmas</a></li>
+        <li><a href="#achievements" class="hover:underline block py-2 md:py-0">Conquistas</a></li>
+        <li><a href="#projects" class="hover:underline block py-2 md:py-0">Projetos</a></li>
+        <li><a href="#faculty" class="hover:underline block py-2 md:py-0">Docentes</a></li>
+        <li><a href="#admissions" class="hover:underline block py-2 md:py-0">Inscrições</a></li>
+        <li><a href="#contact" class="hover:underline block py-2 md:py-0">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-green-700 text-white py-12 md:py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-4xl font-bold mb-4">Técnico em Informática - IFRO Ariquemes</h2>
+      <p class="text-base md:text-lg mb-6">Forme-se em tecnologia e inove na Amazônia com um curso reconhecido e prático!</p>
+      <a href="https://selecao.ifro.edu.br/unificado" class="bg-white text-green-700 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" aria-label="Inscreva-se no processo seletivo" target="_blank" rel="noopener noreferrer">Inscreva-se Agora</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Sobre o Curso</h2>
+      <p class="text-base md:text-lg mb-4">O Curso Técnico em Informática Integrado ao Ensino Médio do IFRO Ariquemes capacita jovens para atuar em suporte técnico, desenvolvimento de sistemas e manutenção de redes, com foco em empreendedorismo e sustentabilidade. Com 3.333,4 horas-relógio, o curso combina formação técnica e ensino médio, preparando profissionais éticos para o mercado e para criar startups que impactem a região amazônica.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+        <div>
+          <p class="font-semibold">Duração</p>
+          <p>3 a 6 anos</p>
+        </div>
+        <div>
+          <p class="font-semibold">Vagas</p>
+          <p>40 por turma</p>
+        </div>
+        <div>
+          <p class="font-semibold">Modalidade</p>
+          <p>Presencial, Integrado ao Ensino Médio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Disciplines Section -->
+  <section id="disciplines" class="bg-gray-200 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Disciplinas em Destaque</h2>
+      <div class="carousel" id="disciplines-carousel"></div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section id="curriculum" class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Matriz Curricular</h2>
+      <p class="text-base md:text-lg mb-4">O curso, com 3.333,4 horas-relógio, integra disciplinas gerais e técnicas ao longo de 3 anos.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse bg-white shadow rounded-lg text-sm md:text-base" aria-label="Matriz curricular do curso">
+          <thead>
+            <tr class="bg-green-600 text-white">
+              <th class="p-1 md:p-2 border">Disciplina</th>
+              <th class="p-1 md:p-2 border">1º Ano</th>
+              <th class="p-1 md:p-2 border">2º Ano</th>
+              <th class="p-1 md:p-2 border">3º Ano</th>
+              <th class="p-1 md:p-2 border">Total (h)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="p-1 md:p-2 border">Língua Portuguesa e Literatura</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">300</td></tr>
+            <tr><td class="p-1 md:p-2 border">Matemática</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">300</td></tr>
+            <tr><td class="p-1 md:p-2 border">Educação Física</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">200</td></tr>
+            <tr><td class="p-1 md:p-2 border">Física</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">1</td><td class="p-1 md:p-2 border">166,7</td></tr>
+            <tr><td class="p-1 md:p-2 border">Química</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">1</td><td class="p-1 md:p-2 border">166,7</td></tr>
+            <tr><td class="p-1 md:p-2 border">Biologia</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">133,3</td></tr>
+            <tr><td class="p-1 md:p-2 border">Programação Web</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">4</td><td class="p-1 md:p-2 border">160</td></tr>
+            <tr><td class="p-1 md:p-2 border">Redes de Computadores</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">120</td></tr>
+            <tr><td class="p-1 md:p-2 border">Banco de Dados</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">80</td></tr>
+            <tr><td class="p-1 md:p-2 border">Segurança da Informação</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">2</td><td class="p-1 md:p-2 border">80</td></tr>
+            <tr><td class="p-1 md:p-2 border">Prática Supervisionada</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">-</td><td class="p-1 md:p-2 border">3</td><td class="p-1 md:p-2 border">100</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-center mt-4">
+        <a href="https://portal.ifro.edu.br/images/Campi/Ariquemes/Documentos/matriz-ppc-inf.pdf" class="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">Consulte a matriz completa</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Turmas Section -->
+  <section id="turmas" class="bg-gray-200 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Turmas</h2>
+      <p class="text-base md:text-lg mb-4 text-center">Explore as páginas das turmas do Curso Técnico em Informática, onde cada classe compartilha seus projetos, anúncios e conquistas!</p>
+      <div class="flex flex-col md:flex-row flex-wrap justify-center gap-3 md:gap-4">
+        <a href="turmas/1a.html" class="bg-white text-green-600 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" target="_blank" rel="noopener noreferrer">Turma 1A</a>
+        <a href="turmas/1b.html" class="bg-white text-green-600 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" target="_blank" rel="noopener noreferrer">Turma 1B</a>
+        <a href="turmas/2a.html" class="bg-white text-green-600 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" target="_blank" rel="noopener noreferrer">Turma 2A</a>
+        <a href="turmas/2b.html" class="bg-white text-green-600 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" target="_blank" rel="noopener noreferrer">Turma 2B</a>
+        <a href="turmas/3a.html" class="bg-white text-green-600 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" target="_blank" rel="noopener noreferrer">Turma 3A</a>
+        <a href="turmas/3b.html" class="bg-white text-green-600 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-gray-200 inline-block" target="_blank" rel="noopener noreferrer">Turma 3B</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Conquistas dos Alunos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Olimpíada Brasileira de Informática</h3>
+          <p class="text-sm md:text-base">36 alunos classificados para a 2ª fase em 2023, destacando-se em programação.</p>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Escola Regional de Informática</h3>
+          <p class="text-sm md:text-base">1º lugar na III ERIN3 com projeto de detecção de arquivos duplicados (MD5).</p>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Projetos Inovadores</h3>
+          <p class="text-sm md:text-base">Frameworks como o MyCookie e sistemas como o Relatório SIGA-EDU.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-200 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Projetos dos Alunos</h2>
+      <div class="carousel" id="projects-carousel"></div>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section id="faculty" class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Corpo Docente</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Osvino Schmidt</h3>
+          <p class="text-sm md:text-base">Coordenador Titular</p>
+          <a href="http://lattes.cnpq.br/1551604348654565" class="text-green-600 hover:underline" aria-label="Currículo Lattes de Osvino Schmidt" target="_blank" rel="noopener noreferrer">Currículo Lattes</a>
+        </div>
+        <div class="bg-white p-4 md:p-6 rounded-lg shadow hover-scale">
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Bruno Luiz Silva Rodighiero</h3>
+          <p class="text-sm md:text-base">Coordenador Substituto</p>
+          <a href="http://lattes.cnpq.br/6041052899755492" class="text-green-600 hover:underline" aria-label="Currículo Lattes de Bruno Luiz Silva Rodighiero" target="_blank" rel="noopener noreferrer">Currículo Lattes</a>
+        </div>
+      </div>
+      <p class="text-center mt-4">
+        <a href="https://portal.ifro.edu.br/images/Campi/Ariquemes/Documentos/Lista_de_Docentes.pdf" class="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">Veja a lista completa de docentes</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-gray-200 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">O Que Dizem Nossos Alunos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- Events Calendar Section -->
+  <section id="events" class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Calendário de Eventos</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse bg-white shadow rounded-lg event-table text-sm md:text-base" aria-label="Calendário de eventos do curso">
+          <thead>
+            <tr class="bg-green-600 text-white">
+              <th class="p-1 md:p-2 border">Evento</th>
+              <th class="p-1 md:p-2 border">Data</th>
+              <th class="p-1 md:p-2 border">Descrição</th>
+            </tr>
+          </thead>
+          <tbody id="events-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions Section -->
+  <section id="admissions" class="bg-gray-200 py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Como Ingressar</h2>
+      <p class="text-base md:text-lg mb-4">O ingresso no Curso Técnico em Informática é pelo Processo Seletivo Unificado (PSU), com 40 vagas anuais. A seleção considera as notas do 6º ao 8º ano do Ensino Fundamental, e as inscrições são realizadas online no portal do IFRO.</p>
+      <p class="text-base md:text-lg mb-4">Fique atento ao edital do PSU 2026/1, disponível em:</p>
+      <p class="text-center">
+        <a href="https://selecao.ifro.edu.br/unificado" class="bg-green-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-green-700 inline-block" aria-label="Acesse o portal de seleção do IFRO" target="_blank" rel="noopener noreferrer">Portal de Seleção</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 md:py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Contato</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div>
+          <h3 class="text-lg md:text-xl font-semibold mb-4">Informações Gerais</h3>
+          <p class="text-sm md:text-base"><strong>Endereço:</strong> BR-364, Km 6,5, Ariquemes, RO</p>
+          <p class="text-sm md:text-base"><strong>Telefone:</strong> (69) 2103-0127</p>
+          <p class="text-sm md:text-base"><strong>Email:</strong> ccti.ariquemes@ifro.edu.br</p>
+          <p class="text-sm md:text-base"><strong>Horário:</strong> Segunda a Sexta, 8h às 18h</p>
+        </div>
+        <div>
+          <h3 class="text-lg md:text-xl font-semibold mb-4">Envie uma Mensagem</h3>
+          <form id="contact-form" method="POST">
+            <input type="text" name="name" placeholder="Nome" class="w-full p-2 mb-4 border rounded text-sm md:text-base" required aria-label="Nome">
+            <input type="email" name="email" placeholder="Email" class="w-full p-2 mb-4 border rounded text-sm md:text-base" required aria-label="Email">
+            <textarea name="message" placeholder="Mensagem" class="w-full p-2 mb-4 border rounded text-sm md:text-base" rows="5" required aria-label="Mensagem"></textarea>
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-green-700 inline-block" aria-label="Enviar mensagem">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm md:text-base">© 2025 IFRO Campus Ariquemes. Todos os direitos reservados.</p>
+      <p class="text-sm md:text-base">
+        <a href="https://portal.ifro.edu.br" class="hover:underline" aria-label="Portal oficial do IFRO" target="_blank" rel="noopener noreferrer">Portal IFRO</a> | 
+        <a href="https://github.com/IFRO-Ariquemes" class="hover:underline" aria-label="GitHub do IFRO Ariquemes" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+        <a href="https://tads.ariquemes.ifro.edu.br/" class="hover:underline" aria-label="Curso de ADS" target="_blank" rel="noopener noreferrer">Curso de ADS</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

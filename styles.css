@@ -1,0 +1,28 @@
+.sticky-nav {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+  }
+  
+  .carousel {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+  }
+  
+  .carousel-item {
+	flex: 0 0 auto;
+	scroll-snap-align: start;
+  }
+  
+  .event-table tbody tr:hover {
+	background-color: #e5e7eb;
+  }
+  
+  .hover-scale {
+	transition: transform 0.3s;
+  }
+  
+  .hover-scale:hover {
+	transform: scale(1.05);
+  }
